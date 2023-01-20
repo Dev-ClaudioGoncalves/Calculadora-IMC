@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculadora de IMC</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-input">
+        <div class="titulo">Calculadora de IMC</div>
+        <div class="idade">
+          <label for="idade" id="idade">Idade:</label>
+          <div class="div-idade">
+            <input
+              type="number"
+              id="inputIdade"
+              placeholder="Digite a sua idade"
+              min="0"
+            /><span> /Anos</span>
+          </div>
+        </div>
+        <div class="altura">
+          <label for="altura" id="altura">Altura:</label>
+          <div class="div-altura">
+            <input
+              type="number"
+              id="inputAltura"
+              placeholder="Digite a sua altura em CM"
+              min="0"
+            /><span> /Cm</span>
+          </div>
+        </div>
+        <div class="peso">
+          <label for="peso" id="peso">Peso:</label>
+          <div class="div-peso">
+            <input
+              type="number"
+              id="inputPeso"
+              placeholder="Digite o seu peso Atual"
+              min="0"
+            /><span> /Kg</span>
+          </div>
+        </div>
+        <p class="tratativa"></p>
+        <div class="button">
+          <button id="buttonCalcular">Calcular</button>
+        </div>
+      </div>
+      <div class="container-result">
+        <h3>Resultado:</h3>
+        <p>Seu IMC é de:<span class="resultado-imc"></span></p>
+        <hr />
+        <p>
+          De acordo com a Organização Mundial da Saúde, seu IMC é considerado
+          normal para a sua altura. Para manter o valor de IMC normal, seu peso
+          pode variar entre: <span class=""></span>
+        </p>
+        <table border="1">
+          <tr>
+            <td class="td01"></td>
+            <td class="cabecalho-table">IMC</td>
+            <td class="cabecalho-table">PESO</td>
+          </tr>
+          <tr>
+            <td>Magreza</td>
+            <td>- 18.5</td>
+            <td>- 57.3/KG</td>
+          </tr>
+          <tr>
+            <td>Normal</td>
+            <td>18.5 a 24.9</td>
+            <td>58.3 a 77.1/KG</td>
+          </tr>
+          <tr>
+            <td>Sobrepeso</td>
+            <td>24.9 a 30</td>
+            <td>77.1 a 92.9/KG</td>
+          </tr>
+          <tr>
+            <td >Obesidade</td>
+            <td>+ 30</td>
+            <td> 92.9/KG</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

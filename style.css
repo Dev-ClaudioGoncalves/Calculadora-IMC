@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+body{
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url(./6081374.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-color: rgba(156, 151, 151, 0.514) 
+}
+
+
+.container{
+
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-input{
+    background: #fff;
+    width: 450px;
+    height: 500px;
+    border: 5px solid #fcfafa;
+    padding: 25px;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    font-weight: 600px;
+}
+
+.idade, .altura, .peso{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+#inputIdade, #inputAltura, #inputPeso{
+    width: 190px;
+    height: 30px;
+    border: 2px solid #CDD5DB;
+    border-radius: 5px;
+    padding: 0px 7px 0px 15px;
+    margin-bottom: 30px;
+}
+
+#inputIdade::placeholder, #inputAltura::placeholder, #inputPeso::placeholder{
+    font-size: 0.7rem;
+    color: #747272;
+    
+}
+
+#inputIdade:hover, #inputAltura:hover, #inputPeso:hover{
+    border-color: #3767AE;
+    border: 2px solid #3767AE;
+}
+
+span{
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+
+input[type=number] {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    outline: 0;
+  }
+  
+  input[type=number]:focus {
+   border: 2px solid #3767AE !important;
+}
+
+.tratativa{
+    font-size: 0.8rem;
+    width: 100%;
+    height: 5px;
+    color: #ff0000;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+button{
+    width: 170px;
+    height: 50px;
+    padding: 12px 40px; 
+    cursor: pointer;
+    background: #3767AE;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    outline: none;
+    transition: 0.2s all;
+    font-size: 1rem;
+}
+
+button:active{
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    background: #407edb;
+    font-size: 1rem;
+}
+
+.container-result{
+    background: #fff;
+    width: 450px;
+    height: 500px;
+    border: 5px solid #fcfafa;
+    border-radius: 0px 10px 10px 0px;
+    padding: 25px;
+    border-left: none;  
+}
+
+.container-result > h3{
+    font-size: 1.4rem;
+    color: #3767AE;
+    font-weight: 700;
+}
+
+.container-result > p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+table{
+    border: none;
+    width: 100%;
+}
+
+th, td{
+    border: 1px solid #000;
+    font-size: 1rem;
+    text-align: center;
+    height: 40px;
+    border: 2px solid #454647;
+    font-weight: 700;
+    padding: 10px;
+}
+
+tr{
+    background: #e6e3e3;
+}
+
+td{
+    background: transparent;
+}
+
+table, th, td{
+    border-collapse: collapse;
+}
+
+.td01{
+    border: none;
+    background: #fff
+}
+
+.cabecalho-table{
+    background: #407edb;
+    color: #fff;
+}
+
+.styleTable{
+    background: rgb(73, 111, 238);
+    color: #fff;
+}
+
+.resultado-imc{
+    font-size: 1.1rem;
+    font-weight: 700;
+    
+}
+
+@media screen and (max-width: 450px){
+   
+    .container-input, .container-result{
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0px;
+      width: 300px;
+    }
+    
+    .container-input{
+        margin-top: 20px;
+    }
+
+    #inputIdade, #inputAltura, #inputPeso{
+        width: 185px;
+    }
+
+    #inputIdade::placeholder, #inputAltura::placeholder, #inputPeso::placeholder{
+        font-size: 0.7rem;
+    }
+
+    .container-result{
+        height: 640px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        margin-top: 5px;
+        display: none;
+    }
+
+    .displayNone{
+        display: block;
+    }
+
+    
+}
